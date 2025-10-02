@@ -26,7 +26,7 @@ public class Derek extends LinearOpMode {
 
         // declare hardware by getting configuration
         frontleft = hardwareMap.get(DcMotor.class, "frontleft");
-        frontright = hardwareMap.get(DcMotor.class, "topright");
+        frontright = hardwareMap.get(DcMotor.class, "frontright");
         backleft = hardwareMap.get(DcMotor.class, "backleft");
         backright = hardwareMap.get(DcMotor.class, "backright");
 
