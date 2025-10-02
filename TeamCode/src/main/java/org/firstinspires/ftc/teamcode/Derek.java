@@ -77,8 +77,8 @@ public class Derek extends LinearOpMode {
         double rightBot_Power = (y + x - rx) / denominator;
 
         frontleft.setPower(leftTop_Power * driveTrain_Factor);
-        frontright.setPower(leftBot_Power * driveTrain_Factor);
-        backleft.setPower(rightTop_Power * driveTrain_Factor);
+        backleft.setPower(leftBot_Power * driveTrain_Factor);
+        frontright.setPower(rightTop_Power * driveTrain_Factor);
         backright.setPower(rightBot_Power * driveTrain_Factor);
     }// controller drive end
 
