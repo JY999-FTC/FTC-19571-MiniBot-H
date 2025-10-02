@@ -31,9 +31,9 @@ public class Derek extends LinearOpMode {
         backright = hardwareMap.get(DcMotor.class, "backright");
 
         // reverse because it the only one spinning in wrong direction idk why
-        //frontleft.setDirection(DcMotorSimple.Direction.REVERSE);
+        frontleft.setDirection(DcMotor.Direction.REVERSE);
         //topright.setDirection(DcMotorSimple.Direction.REVERSE);
-        //backleft.setDirection(DcMotorSimple.Direction.REVERSE);
+        backleft.setDirection(DcMotor.Direction.REVERSE);
         //backright.setDirection(DcMotorSimple.Direction.REVERSE);
 
         // When motor has zero power what does it do? BRAKE!!!
