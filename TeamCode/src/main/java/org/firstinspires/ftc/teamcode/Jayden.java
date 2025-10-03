@@ -31,10 +31,10 @@ public class Jayden extends LinearOpMode {
         backright = hardwareMap.get(DcMotor.class, "backright");
 
         // reverse because it the only one spinning in wrong direction idk why
-        //frontleft.setDirection(DcMotorSimple.Direction.REVERSE);
-        //topright.setDirection(DcMotorSimple.Direction.REVERSE);
-        //backleft.setDirection(DcMotorSimple.Direction.REVERSE);
-        //backright.setDirection(DcMotorSimple.Direction.REVERSE);
+        frontleft.setDirection(DcMotor.Direction.REVERSE);
+        //topright.setDirection(DcMotor.Direction.REVERSE);
+        backleft.setDirection(DcMotor.Direction.REVERSE);
+        //backright.setDirection(DcMotor.Direction.REVERSE);
 
         // When motor has zero power what does it do? BRAKE!!!
         frontleft.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
@@ -42,7 +42,7 @@ public class Jayden extends LinearOpMode {
         backleft.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         backright.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
 
-        // Stops and dosent run until you press start
+        // Stops and doesn't run until you press start
         waitForStart();
 
         // This check if you stop the code then stops the code
